@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		4170A801244592D700763F70 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170A800244592D700763F70 /* main.swift */; };
+		4170A8092445931E00763F70 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170A8082445931E00763F70 /* Heap.swift */; };
+		4170A80B2445936100763F70 /* MaxHeap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170A80A2445936100763F70 /* MaxHeap.swift */; };
+		4170A80D2445936A00763F70 /* MinHeap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170A80C2445936A00763F70 /* MinHeap.swift */; };
+		4170A8112445949500763F70 /* Astar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170A8102445949500763F70 /* Astar.swift */; };
+		4170A8142445BCAD00763F70 /* Maze.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170A8132445BCAD00763F70 /* Maze.swift */; };
+		4170A8182445BD5C00763F70 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170A8172445BD5C00763F70 /* Stack.swift */; };
+		4170A81A2445BD8600763F70 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170A8192445BD8600763F70 /* Queue.swift */; };
+		4170A81C2445BF2900763F70 /* DFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170A81B2445BF2900763F70 /* DFS.swift */; };
+		4170A81E2445BF6700763F70 /* BFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170A81D2445BF6700763F70 /* BFS.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +34,15 @@
 /* Begin PBXFileReference section */
 		4170A7FD244592D700763F70 /* tmAlgorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tmAlgorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		4170A800244592D700763F70 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4170A8082445931E00763F70 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
+		4170A80A2445936100763F70 /* MaxHeap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxHeap.swift; sourceTree = "<group>"; };
+		4170A80C2445936A00763F70 /* MinHeap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinHeap.swift; sourceTree = "<group>"; };
+		4170A8102445949500763F70 /* Astar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astar.swift; sourceTree = "<group>"; };
+		4170A8132445BCAD00763F70 /* Maze.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maze.swift; sourceTree = "<group>"; };
+		4170A8172445BD5C00763F70 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		4170A8192445BD8600763F70 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		4170A81B2445BF2900763F70 /* DFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFS.swift; sourceTree = "<group>"; };
+		4170A81D2445BF6700763F70 /* BFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFS.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +75,50 @@
 		4170A7FF244592D700763F70 /* tmAlgorithm */ = {
 			isa = PBXGroup;
 			children = (
+				4170A8152445BD2000763F70 /* DataStructure */,
+				4170A8122445BC2A00763F70 /* QofSearch */,
 				4170A800244592D700763F70 /* main.swift */,
 			);
 			path = tmAlgorithm;
+			sourceTree = "<group>";
+		};
+		4170A8072445930F00763F70 /* Heap */ = {
+			isa = PBXGroup;
+			children = (
+				4170A8082445931E00763F70 /* Heap.swift */,
+				4170A80C2445936A00763F70 /* MinHeap.swift */,
+				4170A80A2445936100763F70 /* MaxHeap.swift */,
+			);
+			path = Heap;
+			sourceTree = "<group>";
+		};
+		4170A8122445BC2A00763F70 /* QofSearch */ = {
+			isa = PBXGroup;
+			children = (
+				4170A8132445BCAD00763F70 /* Maze.swift */,
+				4170A81D2445BF6700763F70 /* BFS.swift */,
+				4170A81B2445BF2900763F70 /* DFS.swift */,
+				4170A8102445949500763F70 /* Astar.swift */,
+			);
+			path = QofSearch;
+			sourceTree = "<group>";
+		};
+		4170A8152445BD2000763F70 /* DataStructure */ = {
+			isa = PBXGroup;
+			children = (
+				4170A8162445BD3400763F70 /* PrimaryDataStructure */,
+				4170A8072445930F00763F70 /* Heap */,
+			);
+			path = DataStructure;
+			sourceTree = "<group>";
+		};
+		4170A8162445BD3400763F70 /* PrimaryDataStructure */ = {
+			isa = PBXGroup;
+			children = (
+				4170A8172445BD5C00763F70 /* Stack.swift */,
+				4170A8192445BD8600763F70 /* Queue.swift */,
+			);
+			path = PrimaryDataStructure;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +180,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4170A801244592D700763F70 /* main.swift in Sources */,
+				4170A81E2445BF6700763F70 /* BFS.swift in Sources */,
+				4170A8092445931E00763F70 /* Heap.swift in Sources */,
+				4170A8182445BD5C00763F70 /* Stack.swift in Sources */,
+				4170A81C2445BF2900763F70 /* DFS.swift in Sources */,
+				4170A81A2445BD8600763F70 /* Queue.swift in Sources */,
+				4170A8142445BCAD00763F70 /* Maze.swift in Sources */,
+				4170A80D2445936A00763F70 /* MinHeap.swift in Sources */,
+				4170A8112445949500763F70 /* Astar.swift in Sources */,
+				4170A80B2445936100763F70 /* MaxHeap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
