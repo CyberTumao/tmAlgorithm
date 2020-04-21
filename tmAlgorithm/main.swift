@@ -13,7 +13,8 @@ import Foundation
 //AustralianMapCSP()
 //eightQueensQuestionCSP()
 //wordSearchCSP()
-sendMoreMoneyCSP()
+//sendMoreMoneyCSP()
+circuitBoardCSP()
 
 //pokerTest()
 

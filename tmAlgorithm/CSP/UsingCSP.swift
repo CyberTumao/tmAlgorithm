@@ -141,3 +141,58 @@ func sendMoreMoneyCSP() {
     }
     print(solution)
 }
+
+func circuitBoardCSP() {
+    var variablesGrids = [(String, CBGrid)]()
+    func generateGrid(rows: Int, columns: Int, withNumber number: Int) -> CBGrid {
+        CBGrid(repeating: [Int](repeating: number, count: columns), count: rows)
+    }
+    func generateDomain(variable: Int, grid: CBGrid) -> [[CBGridLocation]] {
+        var domain = [[CBGridLocation]]()
+        let height = grid.count
+        let width = grid[0].count
+        let variableHeight = variablesGrids[variable].1.count
+        let variableWidth = (variablesGrids[variable].1)[0].count
+        for row in 0 ..< height {
+            for col in 0 ..< width {
+                var columns = col ... (col + variableWidth - 1)
+                var rows = row ... (row + variableHeight - 1)
+                if col + variableWidth <= width && row + variableHeight <= height {
+                    domain.append(columns.map({ c -> [CBGridLocation] in
+                        rows.map { CBGridLocation(row: $0, col: c) }
+                    }).flatMap { $0 })
+                }
+                columns = col ... (col + variableHeight - 1)
+                rows = row ... (row + variableWidth - 1)
+                if col + variableHeight <= width && row + variableWidth <= height {
+                    domain.append(columns.map({ c -> [CBGridLocation] in
+                        rows.map { CBGridLocation(row: $0, col: c) }
+                    }).flatMap { $0 })
+                }
+            }
+        }
+        return domain
+    }
+    var grid = generateGrid(rows: 10, columns: 10, withNumber: 0)
+    let variables: [String] = ["1", "2", "3", "4"]
+    var domains = Dictionary<String, [[CBGridLocation]]>()
+    for variable in variables.enumerated() {
+        variablesGrids.append((variable.element, generateGrid(rows: variable.offset + 3, columns: variable.offset + 2, withNumber: variable.offset + 1)))
+        domains[variable.element] = generateDomain(variable: variable.offset, grid: grid)
+    }
+    var csp = CSP<String, [CBGridLocation]>(variables, domains:domains)
+    csp.addConstraint(CircuitBoardConstraint(boards: variables))
+    guard let solution = backtrackingSearch(csp: csp) else {
+        print("Could not find solution!")
+        return
+    }
+    for (word, gridLoctaions) in solution {
+        for location in gridLoctaions {
+            let (row, col) = (location.row, location.col)
+            grid[row][col] = Int(word)!
+        }
+    }
+    for i in grid {
+        print(i)
+    }
+}

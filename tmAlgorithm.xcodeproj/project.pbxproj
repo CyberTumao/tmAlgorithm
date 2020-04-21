@@ -22,8 +22,9 @@
 		4170A81C2445BF2900763F70 /* DFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170A81B2445BF2900763F70 /* DFS.swift */; };
 		4170A81E2445BF6700763F70 /* BFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4170A81D2445BF6700763F70 /* BFS.swift */; };
 		417AD53C24499533005FB686 /* CSP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417AD53B24499533005FB686 /* CSP.swift */; };
-		419CE6F1244EA3610091EB90 /* WordSearchConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419CE6F0244EA3610091EB90 /* WordSearchConstraint.swift */; };
+		419CE6F1244EA3610091EB90 /* WordSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419CE6F0244EA3610091EB90 /* WordSearch.swift */; };
 		419CE6F3244EED160091EB90 /* SendMoreMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419CE6F2244EED160091EB90 /* SendMoreMoney.swift */; };
+		419CE6F5244EF8C80091EB90 /* CircuitBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419CE6F4244EF8C80091EB90 /* CircuitBoard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,8 +56,9 @@
 		4170A81B2445BF2900763F70 /* DFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFS.swift; sourceTree = "<group>"; };
 		4170A81D2445BF6700763F70 /* BFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFS.swift; sourceTree = "<group>"; };
 		417AD53B24499533005FB686 /* CSP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSP.swift; sourceTree = "<group>"; };
-		419CE6F0244EA3610091EB90 /* WordSearchConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordSearchConstraint.swift; sourceTree = "<group>"; };
+		419CE6F0244EA3610091EB90 /* WordSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordSearch.swift; sourceTree = "<group>"; };
 		419CE6F2244EED160091EB90 /* SendMoreMoney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoreMoney.swift; sourceTree = "<group>"; };
+		419CE6F4244EF8C80091EB90 /* CircuitBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitBoard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,8 +146,9 @@
 				416AEE98244A9C9D002CC6D4 /* MapColoring.swift */,
 				416C52A1244BF5E100F6F023 /* UsingCSP.swift */,
 				416D03D0244D473200A53BE7 /* Queens.swift */,
-				419CE6F0244EA3610091EB90 /* WordSearchConstraint.swift */,
+				419CE6F0244EA3610091EB90 /* WordSearch.swift */,
 				419CE6F2244EED160091EB90 /* SendMoreMoney.swift */,
+				419CE6F4244EF8C80091EB90 /* CircuitBoard.swift */,
 			);
 			path = CSP;
 			sourceTree = "<group>";
@@ -220,8 +223,9 @@
 				4170A8142445BCAD00763F70 /* Maze.swift in Sources */,
 				4170A80D2445936A00763F70 /* MinHeap.swift in Sources */,
 				416C52A2244BF5E100F6F023 /* UsingCSP.swift in Sources */,
-				419CE6F1244EA3610091EB90 /* WordSearchConstraint.swift in Sources */,
+				419CE6F1244EA3610091EB90 /* WordSearch.swift in Sources */,
 				4170A8112445949500763F70 /* Astar.swift in Sources */,
+				419CE6F5244EF8C80091EB90 /* CircuitBoard.swift in Sources */,
 				419CE6F3244EED160091EB90 /* SendMoreMoney.swift in Sources */,
 				4170A80B2445936100763F70 /* MaxHeap.swift in Sources */,
 				416AEE99244A9C9D002CC6D4 /* MapColoring.swift in Sources */,
