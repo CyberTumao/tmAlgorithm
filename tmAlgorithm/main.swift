@@ -8,4 +8,13 @@
 
 import Foundation
 
-tmMazeTest()
+//tmMazeTest()
+
+//AustralianMapCSP()
+//eightQueensQuestionCSP()
+//wordSearchCSP()
+sendMoreMoneyCSP()
+
+//pokerTest()
+
+

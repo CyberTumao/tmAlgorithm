@@ -18,7 +18,13 @@ struct Queue<T: Comparable>: CustomStringConvertible {
         container?.append(value)
     }
     mutating func pop() -> T? {
-        container?.removeFirst()
+        if container == nil { return nil }
+        if container!.count > 0 {
+            return container?.removeFirst()
+        } else {
+            return nil
+        }
     }
+    var count: Int { container?.count ?? 0 }
     var description: String { container?.description ?? "Void Queue!" }
 }
