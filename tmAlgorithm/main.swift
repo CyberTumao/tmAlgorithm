@@ -14,8 +14,9 @@ import Foundation
 //eightQueensQuestionCSP()
 //wordSearchCSP()
 //sendMoreMoneyCSP()
-circuitBoardCSP()
+//circuitBoardCSP()
 
 //pokerTest()
 
-
+//unweightedGraph()
+weightedGraph()

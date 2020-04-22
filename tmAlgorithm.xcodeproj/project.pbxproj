@@ -25,6 +25,10 @@
 		419CE6F1244EA3610091EB90 /* WordSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419CE6F0244EA3610091EB90 /* WordSearch.swift */; };
 		419CE6F3244EED160091EB90 /* SendMoreMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419CE6F2244EED160091EB90 /* SendMoreMoney.swift */; };
 		419CE6F5244EF8C80091EB90 /* CircuitBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419CE6F4244EF8C80091EB90 /* CircuitBoard.swift */; };
+		41FAAF652450013C00FC4ADB /* tmGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FAAF642450013C00FC4ADB /* tmGraph.swift */; };
+		41FAAF6724500AD800FC4ADB /* GraphInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FAAF6624500AD800FC4ADB /* GraphInstance.swift */; };
+		41FAAF6A2450891C00FC4ADB /* UnweightedGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FAAF692450891C00FC4ADB /* UnweightedGraph.swift */; };
+		41FAAF6C2450895600FC4ADB /* WeightedGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FAAF6B2450895600FC4ADB /* WeightedGraph.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,6 +63,10 @@
 		419CE6F0244EA3610091EB90 /* WordSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordSearch.swift; sourceTree = "<group>"; };
 		419CE6F2244EED160091EB90 /* SendMoreMoney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoreMoney.swift; sourceTree = "<group>"; };
 		419CE6F4244EF8C80091EB90 /* CircuitBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitBoard.swift; sourceTree = "<group>"; };
+		41FAAF642450013C00FC4ADB /* tmGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tmGraph.swift; sourceTree = "<group>"; };
+		41FAAF6624500AD800FC4ADB /* GraphInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphInstance.swift; sourceTree = "<group>"; };
+		41FAAF692450891C00FC4ADB /* UnweightedGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnweightedGraph.swift; sourceTree = "<group>"; };
+		41FAAF6B2450895600FC4ADB /* WeightedGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightedGraph.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 		4170A7FF244592D700763F70 /* tmAlgorithm */ = {
 			isa = PBXGroup;
 			children = (
+				41FAAF63245000DB00FC4ADB /* Graph */,
 				416C52A3244C1CA100F6F023 /* PokerTest */,
 				417AD53A24499508005FB686 /* CSP */,
 				4170A8152445BD2000763F70 /* DataStructure */,
@@ -151,6 +160,17 @@
 				419CE6F4244EF8C80091EB90 /* CircuitBoard.swift */,
 			);
 			path = CSP;
+			sourceTree = "<group>";
+		};
+		41FAAF63245000DB00FC4ADB /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				41FAAF642450013C00FC4ADB /* tmGraph.swift */,
+				41FAAF692450891C00FC4ADB /* UnweightedGraph.swift */,
+				41FAAF6B2450895600FC4ADB /* WeightedGraph.swift */,
+				41FAAF6624500AD800FC4ADB /* GraphInstance.swift */,
+			);
+			path = Graph;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,8 +231,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41FAAF6A2450891C00FC4ADB /* UnweightedGraph.swift in Sources */,
 				417AD53C24499533005FB686 /* CSP.swift in Sources */,
+				41FAAF6724500AD800FC4ADB /* GraphInstance.swift in Sources */,
 				4170A801244592D700763F70 /* main.swift in Sources */,
+				41FAAF652450013C00FC4ADB /* tmGraph.swift in Sources */,
 				4170A81E2445BF6700763F70 /* BFS.swift in Sources */,
 				4170A8092445931E00763F70 /* Heap.swift in Sources */,
 				4170A8182445BD5C00763F70 /* Stack.swift in Sources */,
@@ -225,6 +248,7 @@
 				416C52A2244BF5E100F6F023 /* UsingCSP.swift in Sources */,
 				419CE6F1244EA3610091EB90 /* WordSearch.swift in Sources */,
 				4170A8112445949500763F70 /* Astar.swift in Sources */,
+				41FAAF6C2450895600FC4ADB /* WeightedGraph.swift in Sources */,
 				419CE6F5244EF8C80091EB90 /* CircuitBoard.swift in Sources */,
 				419CE6F3244EED160091EB90 /* SendMoreMoney.swift in Sources */,
 				4170A80B2445936100763F70 /* MaxHeap.swift in Sources */,
